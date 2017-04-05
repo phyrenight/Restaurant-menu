@@ -1,0 +1,71 @@
+$kaushan: 'Kaushan Script', cursive
+
+header
+   font:  100% $kaushan
+   text-align: center
+
+   nav
+
+      ul
+         display: inline-block
+         list-style: none
+   
+         li
+            display: block
+            position: relative
+            float: left
+         
+            a, span
+               background: grey
+               display: block
+               border: 1px solid black
+               margin-left: 1px
+               white-space: nowrap
+               padding: 5px 15px 5px 15px
+               color: rgb( 0, 0, 0)
+               text-decoration: none
+     
+            a:hover
+               background: rgb(255, 255, 255)
+
+         ul
+            display: none
+
+         li:hover ul
+            display: block
+            position: absolute
+
+         li:hover li
+            float: none
+            background: grey
+
+main
+   margin: auto
+   width: 80%
+   background: rgb(230, 195, 142)
+   box-shadow: 0px -10px 5px rgba(31, 73, 125, .08), 0px 10px 5px rgba(31, 73, 125, 0.8)
+
+   .food-container
+      margin: auto
+      width: 80%
+
+   .name
+      display: inline-block
+      margin-bottom: 0
+
+   .priceContainer
+      display: inline-block
+      float: right
+
+#foodModal-container, #cartModal-container
+   display: none
+
+footer
+   text-align: center
+
+   ul
+      list-style: none
+      padding: 5px
+
+      li
+         display: inline-block

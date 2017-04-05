@@ -5,10 +5,13 @@
     <title>La Menus</title>
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <meta name="author" content="Marc Preston" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
    <header>
-     <h1> La Menus
+     <h1> La Menus</h1>
      <nav role="navigation">
        <ul>
          <li><a href="#">Home</a></li>
@@ -23,50 +26,52 @@
          </li>
          <li><a href="#">About Us</a></li>
          <li><a href="#">Restaurants</a></li>
-         <li><a href="#">Cart</a></li>
+         <li><span>Cart</span></li>
        </ul>
      </nav>
    </header>
    <main>
      <header>
-       <h2> Italian menu</h2>
+       <h2> Italian Menu</h2>
      </header>
      <section>
-       <h2 id="fiidHeading"></h2>
-       <div id="food1">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <h2 id="foodHeading"></h2>
+       <div class="food-container" id="food1">
+         <p class="name">Food1</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
-       <div id="food2">
-         <p class="name"></p>
-         <p>Price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food2">
+         <p class="name">food2</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description">Nunc ac mollis tortor. Phasellus rhoncus auctor eros quis interdum. Nam urna odio, faucibus nec luctus nec, pellentesque sit amet erat.</p>
        </div>
-       <div id="food3">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food3">
+         <p class="name">food3</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description"> Proin ac nisi malesuada
+          orci rhoncus laoreet. Nam in ornare tortor.</p>
        </div>
-       <div id="food4">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food4">
+         <p class="name">food4</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
-       <div id="food5">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food5">
+         <p class="name">food5</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description"> Proin ac nisi malesuada
+          orci rhoncus laoreet. Nam in ornare tortor.</p>
        </div>
-       <div id="food6">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food6">
+         <p class="name">food6</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description">Nunc ac mollis tortor. Phasellus rhoncus auctor eros quis interdum. Nam urna odio, faucibus nec luctus nec, pellentesque sit amet erat.</p>
        </div>
-       <div id="food7">
-         <p class="name"></p>
-         <p>price: <span class="price"></span></p>
-         <p class="description"></p>
+       <div class="food-container" id="food7">
+         <p class="name">food7</p>
+         <p class="priceContainer">price: $<span class="price">0.00</span></p>
+         <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
      </section>
      <div id="foodModal-container">
@@ -98,5 +103,13 @@
        </div>
      </div>
    </main>
+   <footer>
+     <nav role="navigation">
+       <ul>
+         <li><a href="#">About Us</a></li>
+         <li><a href="#">Legal</a></li> 
+       </ul>
+     </nav>
+   </footer>
   </body>
 </html>
