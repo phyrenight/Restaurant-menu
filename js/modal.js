@@ -89,7 +89,7 @@ function openCart(){
 		var itemcontainer = document.createElement("DIV")
 		var itemName = document.createElement("SPAN");
 		var itemPrice = document.createElement("SPAN");
-		var priceNode = document.createTextNode(foodOrder[i]["price"]);
+		var priceNode = document.createTextNode(" " + foodOrder[i]["price"]);
 		var nameNode = document.createTextNode(foodOrder[i]["name"])
 	    var cartItems = document.getElementById("cartItems");
 	    total += parseFloat(foodOrder[i]["price"]);

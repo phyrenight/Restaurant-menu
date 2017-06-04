@@ -69,6 +69,19 @@ main {
     background-color: white; }
     #foodModal-container #foodModal .container, #cartModal-container #foodModal .container {
       width: 100%; }
+    #foodModal-container #foodModal form, #cartModal-container #foodModal form {
+      text-align: center; }
+    #foodModal-container #foodModal #addItem, #cartModal-container #foodModal #addItem {
+      text-align: center;
+      border: 1px solid black;
+      background-color: #999;
+      display: inline-block;
+      padding: 5px; }
+    #foodModal-container #foodModal #addItem:hover, #cartModal-container #foodModal #addItem:hover {
+      background-color: #d3d3d3; }
+
+#cartModal div:first-child {
+  padding-top: 4px; }
 
 #cartModal {
   padding-top: 5px;
@@ -84,7 +97,7 @@ main {
     background-color: white;
     display: block; }
     #cartModal #cartItems div {
-      display: inline-block;
+      display: block;
       margin-left: 40px; }
   #cartModal #total {
     height: 50px;
