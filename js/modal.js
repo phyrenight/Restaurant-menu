@@ -80,6 +80,7 @@ function openFoodModal(){
 
 function openCart(){
   cartModal.style.display = "block";
+  document.getElementById("cartItems").innerHTML = "";
   var i = 0;
   var total = 0.00;
   var foodOrderLength = foodOrder.length;
@@ -99,7 +100,7 @@ function openCart(){
 	    itemcontainer.appendChild(itemName);
 	    itemcontainer.appendChild(itemPrice);
 	    cartItems.appendChild(itemcontainer);
-	    cartTotal.innerHTML = total;
+	    cartTotal.innerHTML = total.toFixed(2);
 		i++;
 	}
   }
