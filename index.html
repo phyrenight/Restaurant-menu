@@ -42,55 +42,57 @@
          <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
        <div class="food-container" id="food2">
-         <p class="name">food2</p>
+         <p class="name">Food2</p>
          <p class="priceContainer">price: $<span class="price">9.99</span></p>
          <p class="description">Nunc ac mollis tortor. Phasellus rhoncus auctor eros quis interdum. Nam urna odio, faucibus nec luctus nec, pellentesque sit amet erat.</p>
        </div>
        <div class="food-container" id="food3">
-         <p class="name">food3</p>
+         <p class="name">Food3</p>
          <p class="priceContainer">price: $<span class="price">10.49</span></p>
          <p class="description"> Proin ac nisi malesuada
           orci rhoncus laoreet. Nam in ornare tortor.</p>
        </div>
        <div class="food-container" id="food4">
-         <p class="name">food4</p>
+         <p class="name">Food4</p>
          <p class="priceContainer">price: $<span class="price">12.59</span></p>
          <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
        <div class="food-container" id="food5">
-         <p class="name">food5</p>
+         <p class="name">Food5</p>
          <p class="priceContainer">price: $<span class="price">5.99</span></p>
          <p class="description"> Proin ac nisi malesuada
           orci rhoncus laoreet. Nam in ornare tortor.</p>
        </div>
        <div class="food-container" id="food6">
-         <p class="name">food6</p>
+         <p class="name">Food6</p>
          <p class="priceContainer">price: $<span class="price">8.00</span></p>
          <p class="description">Nunc ac mollis tortor. Phasellus rhoncus auctor eros quis interdum. Nam urna odio, faucibus nec luctus nec, pellentesque sit amet erat.</p>
        </div>
        <div class="food-container" id="food7">
-         <p class="name">food7</p>
+         <p class="name">Food7</p>
          <p class="priceContainer">price: $<span class="price">9.00</span></p>
          <p class="description">Morbi quis leo mattis, dignissim orci at, elementum libero. Sed sed semper tellus, et blandit sapien.</p>
        </div>
      </section>
      <div id="foodModal-container">
        <div id="foodModal">
-         <div class="close-container">
-           <span class="close">&times;</span>
-         </div>
-         <div id="image-container">
-           <img id="foodImage" src="" />
-         </div>
-         <div id="foodDetails">
-           <p id="foodName"></p>
-           <p id="foodPrice"></p>
-           <p id="foodDescription"></p>
-         </div>
-         <div id="foodForm">
-           <form>
-            <div id="addItem">Add To Cart</div>
-           </form>
+         <div class="container">
+           <div class="close-container">
+             <span class="close">&times;</span>
+           </div>
+           <div id="image-container">
+             <img id="foodImage" src="" />
+           </div>
+           <div id="foodDetails">
+             <p id="foodName"></p>
+             <p id="foodPrice"></p>
+             <p id="foodDescription"></p>
+           </div>
+           <div id="foodForm">
+             <form>
+               <div id="addItem">Add To Cart</div>
+             </form>
+           </div>
          </div>
        </div>
      </div>
@@ -100,8 +102,10 @@
          <p>Your order</p>
          <div id="cartItems">
          </div>
-         <hr />
-         <p>total = $<span id="cartTotal">0.00</span></p>
+         <div id="total">
+           <hr />
+           <p>total = $<span id="cartTotal">0.00</span></p>
+         </div>
        </div>
      </div>
    </main>

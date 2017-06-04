@@ -1,5 +1,8 @@
 $kaushan: 'Kaushan Script', cursive
 
+body
+   background-image: url("../images/brick-wall-dark.png")
+
 header
    font:  100% $kaushan
    text-align: center
@@ -43,6 +46,7 @@ header
 main
    margin: auto
    width: 80%
+   padding: 5px 0
    background: rgb(230, 195, 142)
    box-shadow: 0px -10px 5px rgba(31, 73, 125, .08), 0px 10px 5px rgba(31, 73, 125, 0.8)
 
@@ -53,6 +57,8 @@ main
    .name
       display: inline-block
       margin-bottom: 0
+      font:  125% $kaushan
+
 
    .priceContainer
       display: inline-block
@@ -71,7 +77,6 @@ main
    #foodModal, #cartModal
       width: 80%
       margin: 15% auto
-      background-color: rgb(255, 255, 255)
       border-radius: 10%
 
       #foodImage
@@ -79,23 +84,43 @@ main
 
    #foodModal
       padding: 20px
+      background-color: rgb(255, 255, 255)
+
+      .container
+         width: 100%
 
 #cartModal
-   padding: 0%
-   height: 150px
+   padding-top: 5px
+   min-height: 250px
    background: rgb(230, 195, 142)
 
    p
       margin-left: 5%
 
-   #cartItems
-      display: block
-      
-
    .close
-      float: right
-      font-size: 20px
-      cursor: pointer
+      padding-top: 15px
+      padding-right: 25px
+
+   #cartItems
+      min-height: 100px
+      background-color: rgb(255, 255, 255)
+      display: block
+     
+      div
+         display: inline-block
+         margin-left: 40px
+
+   #total
+      height: 50px
+      background-color: rgb(255, 255, 255)
+
+      hr
+         margin-top: 0
+
+.close
+   float: right
+   font-size: 20px
+   cursor: pointer
 
 footer
    text-align: center

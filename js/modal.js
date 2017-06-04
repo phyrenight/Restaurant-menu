@@ -82,7 +82,6 @@ function openCart(){
   cartModal.style.display = "block";
   var i = 0;
   var total = 0.00;
-  console.log("hello")
   var foodOrderLength = foodOrder.length;
   if(foodOrderLength > 0){
 	while(i < foodOrderLength){
@@ -124,11 +123,9 @@ window.onclick = function(event) {
 }
 
 function addItemToOrder(){
-    console.log("ooooooo")
     foodModal.style.display = "none";
     var newItem = {name: foodItems[foodIdNumber-1]["name"],
     price: foodItems[foodIdNumber-1]["price"]};
 
     foodOrder.push(newItem);
-    console.log("LLLLL")
 }
